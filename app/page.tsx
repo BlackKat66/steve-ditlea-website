@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Home = () => (
   <section className="page-section bg-primary text-black mb-0 text-black" id="about">
     <div className="container">
@@ -46,8 +48,8 @@ const Home = () => (
             reviewing, popular culture, movies, music of the 60s, 70s, 80s, 90s, 00s, 2010-2021 not so much, drop-dead
             one-liners, black puma-like cats, especially Sheena, who could have been a punk rocker...
           </p>
-          <p className="text-center"><img src="assets/sheena_cats_small.png" width="180" alt="" className="img-fluid" />
-
+          <p className="text-center">
+            <Image src="/sheena_cats_small.png" height={180} width={180} alt="picture of a black cat" className="img-fluid" />
           </p>
         </div>
       </div>

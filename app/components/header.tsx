@@ -3,7 +3,7 @@ import Image from "next/image";
 const Header = () => (
   <header className="masthead bg-primary text-white text-center" style={{ marginTop: "-6rem" }}>
     <div className="container d-flex align-items-center flex-column">
-      <Image src="/assets/top-banner2.png" className="img-fluid" alt="Steve Ditlea" fill />
+      <Image src="/top-banner2.png" className="img-fluid" alt="Steve Ditlea" height={180} width={1080} />
       <div className="container-fluid; text-center" id="menubuttons">
         <div className="row text-center" style={{ marginTop: "2rem", marginBottom: "-12 rem" }}>
           <div className="col-md-12 text-center">
