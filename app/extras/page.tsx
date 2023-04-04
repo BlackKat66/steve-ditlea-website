@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 const Extras = () => (
-  <section className="page-section portfolio" id="articles" style={{marginTop: "-3 rem"}}>
+  <section className="page-section portfolio" id="extras" style={{marginTop: "-80px"}}>
     <div className="container">
       <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">EXTRA</h2>
       <div className="divider-custom">

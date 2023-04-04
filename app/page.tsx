@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Home = () => (
-  <section className="page-section bg-primary text-black mb-0 text-black" id="about">
+  <section className="page-section bg-primary text-black mb-0 text-black" id="about" style={{marginTop: "-80px"}}>
     <div className="container">
       <h2 className="page-section-heading text-center text-uppercase text-black">Home</h2>
       <div className="divider-custom divider-light text-black">
