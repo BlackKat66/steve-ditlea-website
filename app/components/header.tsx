@@ -8,10 +8,10 @@ const Header = () => (
         <div className="row text-center" style={{ marginTop: "2rem", marginBottom: "-12 rem" }}>
           <div className="col-md-12 text-center">
             <ul className="nav nav-pills">
-              <li className="nav-item" style={{ marginLeft: "-3rem" }}> <a className="nav-link" href="articles.html">Articles</a>
+              <li className="nav-item" style={{ marginLeft: "-3rem" }}> <a className="nav-link" href="/articles">Articles</a>
               </li>
-              <li className="nav-item" style={{ marginLeft: "4rem" }}> <a className="nav-link" href="books.html">Books</a> </li>
-              <li className="nav-item" style={{ marginLeft: "4rem" }}> <a className="nav-link" href="extra.html">Extras</a> </li>
+              <li className="nav-item" style={{ marginLeft: "4rem" }}> <a className="nav-link" href="/photos">Photos</a> </li>
+              <li className="nav-item" style={{ marginLeft: "4rem" }}> <a className="nav-link" href="extras">Extras</a> </li>
             </ul>
           </div>
         </div>
