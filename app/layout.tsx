@@ -5,7 +5,7 @@ import Nav from "./components/nav";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-import "./styles.css";
+import "./globals.css";
 
 export const metadata = {
   title: 'Steve Ditlea Journalist @ Large',
