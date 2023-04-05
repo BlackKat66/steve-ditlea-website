@@ -7,8 +7,13 @@ const Nav = () => (
       </a>
       <button
         className="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-navbutton text-white rounded"
-        type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarResponsive" 
+        aria-controls="navbarResponsive"
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
         Menu
         <i className="fas fa-bars"></i>
       </button>
