@@ -3,7 +3,7 @@ import { FC } from "react";
 
 interface ArticleProps {
   articleLink: string;
-  imageLink: string;
+  thumbnailLink?: string;
   headline: string;
   description: string; 
   publishedBy: string;
@@ -11,23 +11,23 @@ interface ArticleProps {
 
 const Article: FC<ArticleProps>  = ({
   articleLink,
-  imageLink,
+  thumbnailLink,
   headline,
   description,
   publishedBy
 }) => (
   <tr style={{ width: "80%" }}>
     <td width="15%">
-      <a href={articleLink} target="_top">
-        <img src={imageLink} className="img-fluid" alt="Article Icon" />
+      <a href={articleLink} target="_blank">
+        <img src={thumbnailLink || "thumbnails/icon_article.png"} className="img-fluid" alt="Article Icon" />
       </a>
     </td>
     <td width="85%">
       <a 
         className="article-text" 
         style={{ fontWeight: 800 }} 
-        href="pdf/Old_45s.pdf"
-        target="_top"
+        href={articleLink}
+        target="_blank"
       >
         {headline}
         <p style={{ fontWeight: 200 }}>
