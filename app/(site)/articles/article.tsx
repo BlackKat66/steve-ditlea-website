@@ -1,15 +1,14 @@
-
 import { FC } from "react";
 
 interface ArticleProps {
   articleLink: string;
   thumbnailLink?: string;
   headline: string;
-  description: string; 
+  description: string;
   publishedBy: string;
 }
 
-const Article: FC<ArticleProps>  = ({
+const Article: FC<ArticleProps> = ({
   articleLink,
   thumbnailLink,
   headline,
@@ -23,9 +22,9 @@ const Article: FC<ArticleProps>  = ({
       </a>
     </td>
     <td width="85%">
-      <a 
-        className="article-text" 
-        style={{ fontWeight: 800 }} 
+      <a
+        className="article-text"
+        style={{ fontWeight: 800 }}
         href={articleLink}
         target="_blank"
       >

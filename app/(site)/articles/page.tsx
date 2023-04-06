@@ -15,14 +15,14 @@ const Articles = () => (
           <tbody>
             {demoArticles.map(({
               articleLink,
-              imageLink,
+              thumbnailLink,
               headline,
               description,
               publishedBy
             }, index) => (
               <Article 
                 articleLink={articleLink}
-                imageLink={imageLink}
+                thumbnailLink={thumbnailLink}
                 headline={headline}
                 description={description}
                 publishedBy={publishedBy}
