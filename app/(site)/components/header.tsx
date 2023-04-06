@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import {  usePathname } from "next/navigation";
 
 const Header = () => {
@@ -15,28 +16,28 @@ const Header = () => {
             <div className="col-md-12 text-center">
               <ul className="nav nav-pills">
                 <li className="nav-item" style={{ marginLeft: "-3rem" }}>
-                  <a 
+                  <Link
                     className={`nav-link ${pathname === "/articles" ? "active"  : ""}`} 
                     href="/articles"
                   >
                     Articles
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item" style={{ marginLeft: "4rem" }}> 
-                  <a 
+                  <Link 
                     className={`nav-link ${pathname === "/photos" ? "active"  : ""}`} 
                     href="/photos"
                   >
                     Photos
-                  </a>
+                  </Link>
                  </li>
                 <li className="nav-item" style={{ marginLeft: "4rem" }}> 
-                  <a 
+                  <Link 
                     className={`nav-link ${pathname === "/extras" ? "active"  : ""}`} 
                     href="/extras"
                   >
                     Extras
-                  </a>
+                  </Link>
                  </li>
               </ul>
             </div>
