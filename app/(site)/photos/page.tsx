@@ -8,7 +8,7 @@ const Photos = () => (
         <div className="divider-custom-line"></div>
       </div>
       <div>
-        Here's where the photos will go. 
+        {`Here's where the photos will go.`}
       </div>
     </div>
 

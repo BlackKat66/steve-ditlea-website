@@ -19,13 +19,14 @@ const Articles = () => (
               headline,
               description,
               publishedBy
-            }) => (
+            }, index) => (
               <Article 
                 articleLink={articleLink}
                 imageLink={imageLink}
                 headline={headline}
                 description={description}
                 publishedBy={publishedBy}
+                key={`article-${index}`}
               />
             ))}
           </tbody>
