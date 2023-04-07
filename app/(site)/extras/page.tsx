@@ -1,15 +1,11 @@
 
 import Image from "next/image";
+import Divider from "../components/divider";
 
 const Extras = () => (
   <section className="page-section portfolio" id="extras" style={{marginTop: "-3rem"}}>
     <div className="container">
-      <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">EXTRAS</h2>
-      <div className="divider-custom">
-        <div className="divider-custom-line"></div>
-        <div className="divider-custom-icon"><i className="far fa-chart-network" style={{fontSize: "3.5 rem"}}></i></div>
-        <div className="divider-custom-line"></div>
-      </div>
+      <Divider iconClass="fa fa-asterisk" title="Extras" />
       <div className="container">
         <table className="table">
           <tbody>
