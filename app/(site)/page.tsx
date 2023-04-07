@@ -1,15 +1,10 @@
 import Image from "next/image";
+import Divider from "./components/divider";
 
 const Home = () => (
   <section className="page-section bg-primary text-black mb-0 text-black" id="about" style={{marginTop: "-3rem"}}>
     <div className="container">
-      <h2 className="page-section-heading text-center text-uppercase text-black">Home</h2>
-      <div className="divider-custom divider-light text-black">
-        <div className="divider-custom-line"></div>
-        <div className="divider-custom-icon"><i className="fas fa-house-user" style={{fontSize: "3.5 rem"}} /></div>
-        <div className="divider-custom-line"></div>
-      </div>
-
+      <Divider iconClass="fas fa-house-user" title="Home" />
       <div className="row">
         <div className="col-lg-6 mr-auto">
           <p className="lead">
