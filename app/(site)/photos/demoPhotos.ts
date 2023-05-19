@@ -19,5 +19,12 @@ export const demoPhotos = [
     location: "Apollo Theater 1974",
     dimensions: "11x14", 
     price: 500
-  }
+  },
+  {
+    photoLink: "/photos/Kiss2.jpg",
+    subject: "KISS",
+    location: "Madison Square Garden 1978",
+    dimensions: "24x36", 
+    price: 750
+  },
 ];

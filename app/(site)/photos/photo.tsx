@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Image from "next/image";
 
 interface PhotoProps {
   photoLink: string; 
@@ -18,7 +17,7 @@ const Photo: FC<PhotoProps> = ({
 }) => {
   return (
     <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-      <Image src={photoLink} height={180} width={180} alt={subject} className="img-fluid" />
+      <img src={photoLink} style={{height: "300px", width: "auto"}} alt={subject} className="img-fluid" />
       <div>{subject}</div>
       <div>{location}</div>
       <div>{dimensions}</div>
