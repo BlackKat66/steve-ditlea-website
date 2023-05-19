@@ -1,20 +1,20 @@
 export const demoPhotos = [
   {
-    imageLink: "photos/GuitarWillie.jpg",
+    photoLink: "/photos/GuitarWillie.jpg",
     subject: "Willie Nelson",
     location: "Atlantic Recording Studio 1973",
     dimensions: "16x24", 
     price: 650
   },
   {
-    imageLink: "photos/Kiss2.jpg",
+    photoLink: "/photos/Kiss2.jpg",
     subject: "KISS",
     location: "Madison Square Garden 1978",
     dimensions: "24x36", 
     price: 750
   },
   {
-    imageLink: "photos/Marvin2.jpg",
+    photoLink: "/photos/Marvin2.jpg",
     subject: "Marvin Gaye",
     location: "Apollo Theater 1974",
     dimensions: "11x14", 

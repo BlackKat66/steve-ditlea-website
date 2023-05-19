@@ -9,22 +9,7 @@ const Articles = () => (
       <div className="container">
         <table className="table">
           <tbody>
-            {demoArticles.map(({
-              articleLink,
-              thumbnailLink,
-              headline,
-              description,
-              publishedBy
-            }, index) => (
-              <Article 
-                articleLink={articleLink}
-                thumbnailLink={thumbnailLink}
-                headline={headline}
-                description={description}
-                publishedBy={publishedBy}
-                key={`article-${index}`}
-              />
-            ))}
+            {demoArticles.map((articleProps, index) => <Article {...articleProps} key={`article-${index}`} />)}
           </tbody>
         </table>
       </div>
