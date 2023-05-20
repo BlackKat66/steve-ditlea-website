@@ -21,7 +21,7 @@ const Photo: FC<PhotoProps> = ({
       <div>{subject}</div>
       <div>{location}</div>
       <div>{dimensions}</div>
-      <div>{`$${price}`}</div>
+      <div style={{marginBottom: "30px"}}>{`$${price}`}</div>
     </div>
   )
 }; 

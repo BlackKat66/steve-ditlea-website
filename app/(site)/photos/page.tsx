@@ -10,7 +10,7 @@ const Photos = () => (
   <section className="page-section portfolio" id="photos" style={{marginTop: "-3rem"}}>
     <div className="container">
       <Divider iconClass="fa fa-camera" title="Photos" />
-      <Row xs={1} sm={2} md={3} >
+      <Row sm={1} lg={3}>
         {demoPhotos.map((photoProps, index) => (
           <Col>
             <Photo {...photoProps} key={`photo-${index}`} />
