@@ -10,15 +10,15 @@ const Photos = () => (
   <section className="page-section portfolio" id="photos" style={{marginTop: "-3rem"}}>
     <div className="container">
       <Divider iconClass="fa fa-camera" title="Photos" />
-      <Row sm={1} lg={3}>
+      <Row xs={1} sm={1} lg={2}>
         {demoPhotos.map((photoProps, index) => (
-          <Col>
-            <Photo {...photoProps} key={`photo-${index}`} />
+          <Col key={`photo-${index}`}>
+            <Photo {...photoProps} />
           </Col>
         ))}
         {demoPhotos.map((photoProps, index) => (
-          <Col>
-            <Photo {...photoProps} key={`photo-${index}`} />
+          <Col key={`photo-${index}-2`} >
+            <Photo {...photoProps} />
           </Col>
         ))}
       </Row>
