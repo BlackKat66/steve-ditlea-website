@@ -16,11 +16,6 @@ const Photos = () => (
             <Photo {...photoProps} />
           </Col>
         ))}
-        {demoPhotos.map((photoProps, index) => (
-          <Col key={`photo-${index}-2`} >
-            <Photo {...photoProps} />
-          </Col>
-        ))}
       </Row>
     </div>
   </section>
