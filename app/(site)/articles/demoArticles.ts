@@ -7,6 +7,18 @@ export const demoArticles = [
     publishedBy: "The New York Times November 14, 1976"
   },
   {
+    articleLink: "pdf/Steve_Jobs.pdf",
+    headline: "An Apple on Every Desk",
+    description: "Apple chairman Steve Jobs boosted his own productivity using his company's computer.",
+    publishedBy: "Inc. Magazine October 1981"
+  },
+  {
+    articleLink: "pdf/Birth_of_an_Industry.pdf",
+    headline: "The Birth of an Industry",
+    description: "Working in their attics, basements, and garages, seven entrepreneurs tacked together a totally new industry.",
+    publishedBy: "Inc. Magazine January 1982"
+  },
+  {
     articleLink: "pdf/Public_Troth.pdf",
     headline: "The Public Troth: Getting Hitched At New York City’s Chapels of Love",
     description: "Municipal wedding venues in all boroughs reflect local terms of endearment.",
@@ -52,5 +64,17 @@ export const demoArticles = [
     headline: "Up and Running",
     description: "New minimally invasive surgery makes knee replacement as routine as a walk in the park.",
     publishedBy: "New York Daily News May 11, 2006"
+  },
+  {
+    articleLink: "pdf/MEDMEN.pdf",
+    headline: "Biochester",
+    description: "Can the county become the nation's biotech capital? Vital ssigns say yes.",
+    publishedBy: "914 Inc. Winter 2011"
+  },
+  {
+    articleLink: "pdf/Tech_for_the_Body.pdf",
+    headline: "Tech for the Body - and Soul",
+    description: "Presenting the latest and greatest in high-tech gizmos, gear, and gadgetry.",
+    publishedBy: "914 Inc. Springt 2019"
   },
 ];
