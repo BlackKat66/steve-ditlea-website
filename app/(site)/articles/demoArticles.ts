@@ -45,6 +45,12 @@ export const demoArticles = [
     publishedBy: "New York Daily News April 26, 1993"
   },
   {
+    articleLink: "pdf/HardDrive.pdf",
+    headline: "Hard -Drive Healers",
+    description: "A hard-drive crash doesn't have to be a calamity. Disk doctors can help you resurrect lost data.",
+    publishedBy: "Popular Mechanics August 1998"
+  },
+  {
     articleLink: "pdf/Nielsens.pdf",
     thumbnailLink: "thumbnails/thumb_neilson.png",
     headline: "Confessions of a Nielsen Family",
