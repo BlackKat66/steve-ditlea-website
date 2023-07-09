@@ -65,6 +65,12 @@ export const demoArticles = [
     publishedBy: "New York Daily News January 26, 2005"
   },
   {
+    articleLink: "pdf/Stroke.pdf",
+    headline: "Retraining the Brainr",
+    description: "New and aggressive long-term therapies are helping stroke patients achieve full recovery.",
+    publishedBy: "New York Daily News July 20, 2005"
+  },
+  {
     articleLink: "pdf/Knee_Replacement.pdf",
     thumbnailLink: "thumbnails/thumb_knee.png",
     headline: "Up and Running",
