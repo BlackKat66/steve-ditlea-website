@@ -25,9 +25,15 @@ export const demoArticles = [
     publishedBy: "New York Daily News December 6, 1992"
   },
   {
+    articleLink: "pdf/Deming.pdf",
+    headline: "Manage-mentor",
+    description: "Prof. W. Edwards Deming is the guru of quality control.",
+    publishedBy: "New York Daily News February 19, 1993"
+  },
+  {
     articleLink: "pdf/Denny.pdf",
     thumbnailLink: "thumbnails/thumb_batman.png",
-    headline: "Threads in the Batman Yarn: Denny O’Neil Reveals",
+    headline: "New Threads in the Batman Yarn: Denny O’Neil Reveals",
     description: "A costume change will lead to meta-fiction in DC Comics universe.",
     publishedBy: "New York Daily News May 6, 1993"
   },
@@ -48,7 +54,7 @@ export const demoArticles = [
   {
     articleLink: "pdf/E-sports.pdf",
     thumbnailLink: "thumbnails/thumb_esports.png",
-    headline: "Plugged Into The Scene: Egames",
+    headline: "Plugged In to the Scene",
     description: "The virtual & real worlds meet at computer gaming events.",
     publishedBy: "New York Daily News October 10, 2004"
   },
