@@ -8,7 +8,6 @@ export const demoArticles = [
   },
   {
     articleLink: "pdf/Steve_Jobs.pdf",
-    thumbnailLink: "thumbnails/SteveJobs.jpg",
     headline: "An Apple on Every Desk",
     description: "Apple chairman Steve Jobs boosted his own productivity using his company's computer.",
     publishedBy: "Inc. Magazine October 1981"
@@ -27,7 +26,6 @@ export const demoArticles = [
   },
   {
     articleLink: "pdf/Deming.pdf",
-    thumbnailLink: "thumbnails/Deming.jpg",
     headline: "Manage-mentor",
     description: "Prof. W. Edwards Deming is the guru of quality control.",
     publishedBy: "New York Daily News February 19, 1993"
