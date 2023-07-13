@@ -1,11 +1,20 @@
 import Image from "next/image";
 import Divider from "./components/divider";
-import { getHomePageCopy } from "../utils";
+//import { getHomePageCopy } from "../utils";
+
+  // Restore values once deployment issues are fixed 
 
 const Home = async () => {
-  const homePageCopyData = await getHomePageCopy(); 
+  //const homePageCopyData = await getHomePageCopy(); 
 
-  const { introBlurb, listOfNames, rightColumn, bottomBlurb } = homePageCopyData[0].fields;
+  const [ introBlurb, listOfNames, rightColumn, bottomBlurb ] = [
+    "Hi",
+    "Hello",
+    "Yo",
+    "Wassup"
+  ];
+
+  //const { introBlurb, listOfNames, rightColumn, bottomBlurb } = homePageCopyData[0].fields;
 
   const parsedRightColumn = String(rightColumn).split('\n\n');
 
