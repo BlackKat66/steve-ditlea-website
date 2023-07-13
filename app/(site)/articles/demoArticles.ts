@@ -1,5 +1,11 @@
 export const demoArticles = [
   {
+    articleLink: "pdf/FleetwoodMac.pdf",
+    headline: "The Trauma and Triumph of Fleetwood Mac",
+    description: "When Fleetwood Mac's mainspring gave away his money and became a gardner, and their prime mover joined a Jesus cult, how did the survivors pull the band together?",
+    publishedBy: "Circus February 1972"
+  },
+  {
     articleLink: "pdf/Old_45s.pdf",
     thumbnailLink: "thumbnails/thumb_old_rock.png",
     headline: "Collecting Rock Oldies - Records That Go Jingle",
