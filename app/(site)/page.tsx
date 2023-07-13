@@ -1,20 +1,11 @@
 import Image from "next/image";
 import Divider from "./components/divider";
-//import { getHomePageCopy } from "../utils";
-
-  // Restore values once deployment issues are fixed 
+import { getHomePageCopy } from "../utils";
 
 const Home = async () => {
-  //const homePageCopyData = await getHomePageCopy(); 
+  const homePageCopyData = await getHomePageCopy(); 
 
-  const [ introBlurb, listOfNames, rightColumn, bottomBlurb ] = [
-    "Hi",
-    "Hello",
-    "Yo",
-    "Wassup"
-  ];
-
-  //const { introBlurb, listOfNames, rightColumn, bottomBlurb } = homePageCopyData[0].fields;
+  const { introBlurb, listOfNames, rightColumn, bottomBlurb } = homePageCopyData[0].fields;
 
   const parsedRightColumn = String(rightColumn).split('\n\n');
 
@@ -33,7 +24,6 @@ const Home = async () => {
               <Image src="/sheena_cats_small.png" height={180} width={180} alt="picture of a black cat" className="img-fluid" />
             </p>
             <p className="lead">{ String(bottomBlurb) }</p>
-            <p>Test</p>
           </div>
         </div>
       </div>
