@@ -1,8 +1,8 @@
 import { createClient } from 'contentful';
 
 export const contentfulClient = createClient({
-  space: process.env.CONTENTFUL_SPACE as string, 
-  accessToken: process.env.CONTENTFUL_TOKEN as string
+  space: process.env.CONTENTFUL_SPACE as string || "089jsgdf", 
+  accessToken: process.env.CONTENTFUL_TOKEN as string || "83490284092834092384"
 });
 
 export const getHomePageCopy = async () => {
