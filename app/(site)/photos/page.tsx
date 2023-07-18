@@ -1,24 +1,33 @@
-"use client";
-
 import Divider from "../components/divider";
 import Photo from "./photo";
-import { demoPhotos } from "./demoPhotos";
+import { getPhotos } from "@/app/utils";
 
-import { Col, Row } from "react-bootstrap";
+const Photos = async () => {
+  const photos = await getPhotos();
 
-const Photos = () => (
-  <section className="page-section portfolio" id="photos" style={{marginTop: "-3rem"}}>
-    <div className="container">
-      <Divider iconClass="fa fa-camera" title="Photos" />
-      <Row xs={1} sm={1} lg={2}>
-        {demoPhotos.map((photoProps, index) => (
-          <Col key={`photo-${index}`}>
-            <Photo {...photoProps} />
-          </Col>
-        ))}
-      </Row>
-    </div>
-  </section>
-);
+  const parsedPhotos = photos.map((item) => ({
+    subject: item.fields.subject as string,
+    location: item.fields.location as string,
+    // @ts-ignore
+    photoLink: item.fields.photo.fields.file.url as string
+  }))
+
+
+
+  return (
+    <section className="page-section portfolio" id="photos" style={{marginTop: "-3rem"}}>
+      <div className="container">
+        <Divider iconClass="fa fa-camera" title="Photos" />
+        <div className="row">
+        {parsedPhotos.map((photoProps, index) => (
+            <div className="col col-12 col-sm-12 col-lg-6" key={`photo-${index}`}>
+              <Photo {...photoProps} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+} 
 
 export default Photos; 
