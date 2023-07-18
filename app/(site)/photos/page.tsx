@@ -10,9 +10,7 @@ const Photos = async () => {
     location: item.fields.location as string,
     // @ts-ignore
     photoLink: item.fields.photo.fields.file.url as string
-  }))
-
-
+  }));
 
   return (
     <section className="page-section portfolio" id="photos" style={{marginTop: "-3rem"}}>
