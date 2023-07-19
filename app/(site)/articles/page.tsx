@@ -1,3 +1,5 @@
+import { format, parseISO } from "date-fns";
+
 import Article from './article';
 import Divider from '../components/divider';
 import { getArticles } from '@/app/utils';
@@ -5,10 +7,12 @@ import { getArticles } from '@/app/utils';
 const Articles = async () => {
   const articles = await getArticles();
 
-  const parsedArticles = articles.map((item) => ({
+  const parsedArticles = articles.map((item: any) => ({
     headline: item.fields.headline as string,
-    description: item.fields.description as string,
+    description: item.fields.description || "" as string,
     publishedBy: item.fields.publishedBy as string,
+    // @ts-ignore
+    publicationDate: format(parseISO(item.fields.publicationDate), "MMMM d, y"),
     // @ts-ignore
     articleLink: item.fields.article.fields.file.url as string,
     // @ts-ignore
@@ -22,7 +26,10 @@ const Articles = async () => {
         <div className="container">
           <table className="table">
             <tbody>
-              {parsedArticles.map((articleProps, index) => <Article {...articleProps} key={`article-${index}`} />)}
+              {
+                // @ts-ignore
+                parsedArticles.map((articleProps, index) => <Article {...articleProps} key={`article-${index}`} />)
+              }
             </tbody>
           </table>
         </div>

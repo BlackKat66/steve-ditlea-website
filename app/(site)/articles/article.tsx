@@ -6,6 +6,7 @@ interface ArticleProps {
   headline: string;
   description: string;
   publishedBy: string;
+  publicationDate: string;
 }
 
 const Article: FC<ArticleProps> = ({
@@ -13,7 +14,8 @@ const Article: FC<ArticleProps> = ({
   thumbnailLink,
   headline,
   description,
-  publishedBy
+  publishedBy,
+  publicationDate
 }) => (
   <tr style={{ width: "80%" }}>
     <td width="15%">
@@ -34,7 +36,7 @@ const Article: FC<ArticleProps> = ({
         </p>
       </a>
       <p className="text-sm-right" style={{ paddingTop: "1.5rem", fontSize: "1.2rem", fontStyle: "italic" }}>
-        {publishedBy}
+        {`${publishedBy} ${publicationDate}`}
       </p>
     </td>
   </tr>

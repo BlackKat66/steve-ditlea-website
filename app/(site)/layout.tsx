@@ -2,8 +2,10 @@ import Head from "next/head";
 import Script from "next/script";
 
 import Nav from "./components/nav";
-import Header from "./components/header"; 
+import Header from "./components/header";
 import Footer from "./components/footer";
+
+// import { getHeaderContent } from "@/app/utils";
 
 import "./globals.css";
 
@@ -12,11 +14,15 @@ export const metadata = {
   description: "",
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  // const headerContent = await getHeaderContent();
+
+  const bannerImageUrl = "/top-banner2.png" as string; 
+
   return (
     <html lang="en">
       <Head>
@@ -33,7 +39,7 @@ export default function RootLayout({
       <Script src="/scripts/theme.js" />
       <body>
         <Nav />
-        <Header />
+        <Header bannerImageUrl={bannerImageUrl} />
         {children}
         <Footer />
       </body>
