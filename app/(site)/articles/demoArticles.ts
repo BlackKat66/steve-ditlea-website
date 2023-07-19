@@ -99,6 +99,6 @@ export const demoArticles = [
     articleLink: "pdf/Tech_for_the_Body.pdf",
     headline: "Tech for the Body - and Soul",
     description: "Presenting the latest and greatest in high-tech gizmos, gear, and gadgetry.",
-    publishedBy: "914 Inc. Spring 2019"
+    publishedBy: "914 Inc. Spring 2019 "
   },
 ];
