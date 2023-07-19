@@ -72,13 +72,13 @@ export const demoArticles = [
   },
   {
     articleLink: "pdf/Apolitical_Pig.pdf",
-    headline: "GUINEA PIG Bipartisan Pig Takes a Red State Powder",
+    headline: "Bipartisan Pig Takes a Red State Powder",
     description: "Politics aside, regional tastes in medicine differ.",
     publishedBy: "New York Daily News January 26, 2005"
   },
   {
     articleLink: "pdf/Stroke.pdf",
-    headline: "Retraining the Brainr",
+    headline: "Retraining the Brain",
     description: "New and aggressive long-term therapies are helping stroke patients achieve full recovery.",
     publishedBy: "New York Daily News July 20, 2005"
   },
