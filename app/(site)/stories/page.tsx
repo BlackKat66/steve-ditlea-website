@@ -4,7 +4,7 @@ import Article from './article';
 import Divider from '../components/divider';
 import { getArticles } from '@/app/utils';
 
-const Articles = async () => {
+const Stories = async () => {
   const articles = await getArticles();
 
   const parsedArticles = articles.map((item: any) => ({
@@ -22,7 +22,7 @@ const Articles = async () => {
   return (
     <section className="page-section portfolio" id="articles" style={{marginTop: "-3rem"}}>
       <div className="container">
-        <Divider iconClass="far fa-newspaper" title="Articles" />
+        <Divider iconClass="far fa-newspaper" title="Stories" />
         <div className="container">
           <table className="table">
             <tbody>
@@ -38,4 +38,4 @@ const Articles = async () => {
   );
 }; 
 
-export default Articles; 
+export default Stories; 

@@ -13,10 +13,18 @@ const NavPills = () => {
           <ul className="nav nav-pills">
             <li className="nav-item" style={{ marginLeft: "-3rem" }}>
               <Link
-                className={`nav-link ${pathname === "/articles" ? "active" : ""}`}
-                href="/articles"
+                className={`nav-link ${pathname === "/stories" ? "active" : ""}`}
+                href="/stories"
               >
-                Articles
+                Stories
+              </Link>
+            </li>
+            <li className="nav-item" style={{ marginLeft: "4rem" }}>
+              <Link
+                className={`nav-link ${pathname === "/books" ? "active" : ""}`}
+                href="/books"
+              >
+                Books
               </Link>
             </li>
             <li className="nav-item" style={{ marginLeft: "4rem" }}>
@@ -25,14 +33,6 @@ const NavPills = () => {
                 href="/photos"
               >
                 Photos
-              </Link>
-            </li>
-            <li className="nav-item" style={{ marginLeft: "4rem" }}>
-              <Link
-                className={`nav-link ${pathname === "/extras" ? "active" : ""}`}
-                href="/extras"
-              >
-                Extras
               </Link>
             </li>
           </ul>

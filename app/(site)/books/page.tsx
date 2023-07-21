@@ -2,10 +2,10 @@
 import Image from "next/image";
 import Divider from "../components/divider";
 
-const Extras = () => (
-  <section className="page-section portfolio" id="extras" style={{marginTop: "-3rem"}}>
+const Books = () => (
+  <section className="page-section portfolio" id="books" style={{marginTop: "-3rem"}}>
     <div className="container">
-      <Divider iconClass="fa fa-asterisk" title="Extras" />
+      <Divider iconClass="fa fa-book" title="Books" />
       <div className="container">
         <table className="table">
           <tbody>
@@ -61,4 +61,4 @@ const Extras = () => (
   </section>
 );
 
-export default Extras; 
+export default Books; 
