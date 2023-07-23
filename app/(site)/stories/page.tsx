@@ -14,8 +14,6 @@ import { getArticles } from '@/app/utils';
 const Stories = async () => {
   const articles = await getArticles();
 
-  console.log({ rawPublicationDates: articles.map((item) => item.fields.publicationDate) });
-
   const parsedArticles = articles.map((item: any) => ({
     headline: item.fields.headline as string,
     description: item.fields.description || "" as string,
@@ -26,9 +24,13 @@ const Stories = async () => {
     articleLink: item.fields.article.fields.file.url as string,
     // @ts-ignore
     thumbnailLink: item.fields.thumbnail ? item.fields.thumbnail.fields.file.url as string : undefined
-  }));
+  })).sort((a, b) => {
+    const beforeDate = DateTime.fromFormat(a.publicationDate, "MMMM d, y"); 
+    const afterDate = DateTime.fromFormat(b.publicationDate, "MMMM d, y"); 
 
-  console.log(parsedArticles); 
+    // @ts-ignore
+    return beforeDate - afterDate;
+  });
 
   return (
     <section className="page-section portfolio" id="articles" style={{marginTop: "-3rem"}}>
