@@ -2,6 +2,8 @@ import Image from "next/image";
 import Divider from "./components/divider";
 import { getHomePageCopy } from "../utils";
 
+// Revalidates the cache every 60 seconds, so that new content can be loaded 
+// relatively quickly.
 export const revalidate = 60;
 
 const Home = async () => {

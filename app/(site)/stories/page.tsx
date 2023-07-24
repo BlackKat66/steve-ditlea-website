@@ -11,6 +11,8 @@ import Article from './article';
 import Divider from '../components/divider';
 import { getArticles } from '@/app/utils';
 
+// Revalidates the cache every 60 seconds, so that new content can be loaded 
+// relatively quickly.
 export const revalidate = 60;
 
 const Stories = async () => {
