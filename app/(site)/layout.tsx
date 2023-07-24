@@ -5,13 +5,7 @@ import Nav from "./components/nav";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-import { getHeaderContent } from "@/app/utils";
-
 import "./globals.css";
-
-// Revalidates the cache every 60 seconds, so that new content can be loaded 
-// relatively quickly.
-export const revalidate = 60;
 
 export const metadata = {
   title: 'Steve Ditlea Journalist @ Large',
@@ -23,15 +17,6 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const headerContent = await getHeaderContent();
-
-  // @ts-ignore
-  const remoteBannerImage = headerContent[0].fields.bannerImage.fields.file.url;
-
-  const localBannerImage =  "/top-banner2.png"; 
-
-  const bannerImageUrl = remoteBannerImage || localBannerImage as string; 
-
   return (
     <html lang="en">
       <Head>
@@ -48,7 +33,7 @@ export default async function RootLayout({
       <Script src="/scripts/theme.js" />
       <body>
         <Nav />
-        <Header bannerImageUrl={bannerImageUrl} />
+        <Header bannerImageUrl="/top-banner2.png"/>
         {children}
         <Footer />
       </body>
