@@ -2,6 +2,8 @@ import Image from "next/image";
 import Divider from "./components/divider";
 import { getHomePageCopy } from "../utils";
 
+export const revalidate = 60;
+
 const Home = async () => {
   const homePageCopyData = await getHomePageCopy(); 
 

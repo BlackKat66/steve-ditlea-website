@@ -11,6 +11,8 @@ import Article from './article';
 import Divider from '../components/divider';
 import { getArticles } from '@/app/utils';
 
+export const revalidate = 60;
+
 const Stories = async () => {
   const articles = await getArticles();
 

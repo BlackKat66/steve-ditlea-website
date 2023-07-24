@@ -2,6 +2,8 @@ import Divider from "../components/divider";
 import Photo from "./photo";
 import { getPhotos } from "@/app/utils";
 
+export const revalidate = 60;
+
 const Photos = async () => {
   const photos = await getPhotos();
 
