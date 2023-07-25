@@ -11,15 +11,15 @@ const Books = () => (
           <tbody>
             <tr style={{ width: "80%" }}>
 
-              <td width="30%"><a href="books/Rock Stars Book_v1.pdf" target="_top">
-                <img src="images/rockstars_cover02.png" className="img-fluid" alt="Book Icon" /></a></td>
+              <td width="30%"><a href="/pdf/Rock_Stars_Book_V5.pdf" target="_blank">
+                <img src="/photos/rockstars_cover02.png" className="img-fluid" alt="Book Icon" /></a></td>
               <td width="70%">
                 <p className="article-text" style={{ fontWeight: "800" }}><a className="article-text" style={{ fontWeight: "800" }}
-                  href="https://www.atariarchives.org/deli/" target="_blank">
+                  href="/pdf/Rock_Stars_Book_V5.pdf" target="_blank">
                   Rock Stars</a></p>
-                <p className="article-text" style={{ fontWeight: "400" }}><a href="books/Rock Stars Book V5.pdf"><i
+                <p className="article-text" style={{ fontWeight: "400" }}><a href="/pdf/Rock_Stars_Book_V5.pdf" target="_blank"><i
                   className="fas fa-chevron-circle-right" style={{ fontSize: "1.4rem", color: "orange" }} ></i></a><a
-                    href="books/Rock Stars Book V5.pdf" target="_top">&nbsp;&nbsp;Free, the complete 1979 book Rock
+                    href="/pdf/Rock_Stars_Book_V5.pdf" target="_blank">&nbsp;&nbsp;Free, the complete 1979 book Rock
                     Stars (on Amazon. com up to $999.99)</a></p>
 
                 <p>Rock Stars
