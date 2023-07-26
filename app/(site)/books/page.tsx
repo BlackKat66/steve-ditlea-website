@@ -69,16 +69,16 @@ const Books = () => (
           <tbody>
             <tr style={{ width: "80%" }}>
 
-              <td width="30%"><a href="https://www.atariarchives.org/deli/" target="_top"
-              ><img src="images/digital_deli_01.png" className="img-fluid" alt="Book Icon" /></a></td>
+              <td width="30%"><a href="https://www.atariarchives.org/deli/" target="_blank"
+              ><img src="/photos/digital_deli_01.png" className="img-fluid" alt="Book Icon" /></a></td>
               <td width="70%">
                 <p className="article-text" style={{ fontWeight: "800" }} ><a className="article-text" style={{ fontWeight: "800" }}
                   href="https://www.atariarchives.org/deli/" target="_blank">
                   Digital Deli</a></p>
                 <p className="article-text" style={{ fontWeight: "400" }}><a href="https://www.atariarchives.org/deli/"
-                  target="_top"><i className="fas fa-chevron-circle-right"
+                  target="_blank"><i className="fas fa-chevron-circle-right"
                     style={{ fontSize: "1.4 rem", color: "orange" }}></i></a>&nbsp;&nbsp;<a
-                      href="https://www.atariarchives.org/deli/" target="_top">The comprehensive, user-lovable menu of
+                      href="https://www.atariarchives.org/deli/" target="blank">The comprehensive, user-lovable menu of
                     computer lore, lifestyles and fancy.</a>
                 </p>
                 <p>Workman Publishing New York,
