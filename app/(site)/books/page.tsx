@@ -101,6 +101,81 @@ const Books = () => (
                   with a good look at the MENU. Then try some of our more future-forward suggestions below.
                 </p>
 
+
+                <ul className="article-list">
+                  <li><b><a href="https://www.atariarchives.org/deli/" target="_blank"><i
+                    className="fas fa-chevron-circle-right"
+                    style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;&nbsp;<a
+                      href="https://www.atariarchives.org/deli/" target="_blank">MENU</a></b></li>
+
+
+                  <li>
+                    <a href="https://www.atariarchives.org/deli/homebrew_and_how_the_apple.php" target="_blank">
+                      <i className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>
+                    &nbsp;
+                    <a href="https://www.atariarchives.org/deli/homebrew_and_how_the_apple.php" target="_blank">
+                      <b>HOMEBREW AND HOW THE APPLE CAME TO BE </b>by Stephen Wozniak
+                    </a><br />
+                    The “Deli’s” most linked-to content, in which Steve Jobs’ tech partner explained their origins.</li>
+
+
+                  <li><a href="https://www.atariarchives.org/deli/personal_freedom.php" target="_blank"><i
+                    className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;
+                    <a href="https://www.atariarchives.org/deli/personal_freedom.php" target="_blank">
+                      <b>PERSONAL COMPUTERS / PERSONAL FREEDOM </b> by Timothy Leary</a><br />
+                    The multi-media professor of psych and sentience waxed wise, ending with Talking Heads.</li>
+
+
+                  <li><a href="https://www.atariarchives.org/deli/conservative.php" target="_blank"><i
+                    className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;<a
+                      href="https://www.atariarchives.org/deli/conservative.php" target="_blank"><b>THE CONSERVATIVE
+                        COMPUTER</b> by Wm, F. Buckley, Jr.</a><br />
+                    Editor of National Review Bill, the voice of the Smart Right, archly skewered Luddites in his midst.
+                  </li>
+
+
+                  <li><a href="https://www.atariarchives.org/deli/computopia.php" target="_blank"><i
+                    className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;<a
+                      href="https://www.atariarchives.org/deli/computopia.php" target="_blank"><b>COMPUTOPIA NOW!</b> by
+                      Ted Nelson</a><br />
+                    Polymath and enfant terrible, this son of Hollywood royalty predicted the Web.</li>
+
+
+                  <li><a href="https://www.atariarchives.org/deli/cable.php" target="_blank"><i
+                    className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;<a
+                      href="https://www.atariarchives.org/deli/cable.php" target="_blank"><b>COMPUTERS, CABLE AND THE
+                        FUTURE</b> by John Gabree</a><br />
+                    A journalist, organizer and activist predicted streaming video and everyday invasion of privacy.
+                  </li>
+
+
+                  <li><a href="https://www.atariarchives.org/deli/soft.php" target="_blank"><i
+                    className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;<a
+                      href="https://www.atariarchives.org/deli/soft.php" target="_blank"><b>ON SOFTER SOFTWARE</b> by Bill
+                      Gates</a><br />
+                    Scroll down: Pre-Web, the Chairman of Microsoft, Inc. intuited cookies, tracking and AI aps.</li>
+
+
+                  <li><a href="https://www.atariarchives.org/deli/times_goes_computer.php" target="_blank"><i
+                    className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;<a
+                      href="https://www.atariarchives.org/deli/times_goes_computer.php" target="_blank"><b>THE TIMES GOES
+                        COMPUTER</b> by Carla Marie Rupp</a><br />
+                    A transition in NYC journalism, by a KU grad & sole inputter of every word in “Digital Deli”.</li>
+
+
+                  <li><a href="https://www.atariarchives.org/deli/40_year_old.php" target="_blank"><i
+                    className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;<a
+                      href="https://www.atariarchives.org/deli/40_year_old.php" target="_blank"><b>THE FORTY-YEAR-OLD
+                        HIPPIE BRINGS THE COMPUTER AGE HOME</b> by Ted Richards</a><br />
+                    Transitioning from the We Age to the dig-it-all Me Age, an Underground Comix icon matures.</li>
+
+                  <li><a href="https://www.atariarchives.org/deli/part2_forty.php" target="_blank"><i
+                    className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;<a
+                      href="https://www.atariarchives.org/deli/part2_forty.php" target="_blank"><b>THE FORTY-YEAR-OLD
+                        HIPPIE AND THE CRUNCHY COMPTER</b> by Ted Richards</a><br />
+                    Semi-autobiographical: Ted was marketing czar for Atari. Now the designer of this Web site!</li>
+
+                </ul>
               </td>
             </tr>
 
@@ -111,143 +186,6 @@ const Books = () => (
     </div>
 
   </section >
-);
-
-// const DeliArticleList = () => (
-//   <ul className="article-list">
-//   <li><b><a href="https://www.atariarchives.org/deli/" target="_top"><i
-//     className="fas fa-chevron-circle-right"
-//     style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;&nbsp;<a
-//       href="https://www.atariarchives.org/deli/" target="_top">MENU</a></b></li>
-
-
-//   <li>
-
-//     <a href="https://www.atariarchives.org/deli/homebrew_and_how_the_apple.php" target="_top">
-//       <i className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>
-//       &nbsp;
-//       <a href="https://www.atariarchives.org/deli/homebrew_and_how_the_apple.php" target="_top">
-//       <b>HOMEBREW AND HOW THE APPLE CAME TO BE </b>by Stephen Wozniak
-//       </a><br />
-//     The “Deli’s” most linked-to content, in which Steve Jobs’ tech partner explained their origins.</li>
-
-
-//   <li><b><a href="https://www.atariarchives.org/deli/personal_freedom.php" target="_top"><i
-//     className="fas fa-chevron-circle-right" style={{ fontSize: "1.2 rem", color: "orange" }}></i></a>&nbsp;<a
-//       href="https://www.atariarchives.org/deli/personal_freedom.php" target="_top">PERSONAL COMPUTERS
-//       / PERSONAL FREEDOM</b> by Timothy Leary</a><br>
-//     The multi-media professor of psych and sentience waxed wise, ending with Talking Heads.</li>
-
-
-//   <li><b><a href="https://www.atariarchives.org/deli/conservative.php" target="_top"><i
-//     className="fas fa-chevron-circle-right" style="font-size: 1.2rem; color: orange;"></i></a>&nbsp;<a
-//       href="https://www.atariarchives.org/deli/conservative.php" target="_top">THE CONSERVATIVE
-//       COMPUTER</b> by Wm, F. Buckley, Jr.</a><br>
-//     Editor of National Review Bill, the voice of the Smart Right, archly skewered Luddites in his midst.
-//   </li>
-
-
-//   <li><b><a href="https://www.atariarchives.org/deli/computopia.php" target="_top"><i
-//     className="fas fa-chevron-circle-right" style="font-size: 1.2rem; color: orange;"></i></a>&nbsp;<a
-//       href="https://www.atariarchives.org/deli/computopia.php" target="_top">COMPUTOPIA NOW!</b> by
-//     Ted Nelson</a><br>
-//     Polymath and enfant terrible, this son of Hollywood royalty predicted the Web.</li>
-
-
-//   <li><b><a href="https://www.atariarchives.org/deli/cable.php" target="_top"><i
-//     className="fas fa-chevron-circle-right" style="font-size: 1.2rem; color: orange;"></i></a>&nbsp;<a
-//       href="https://www.atariarchives.org/deli/cable.php" target="_top">COMPUTERS, CABLE AND THE
-//       FUTURE</b> by John Gabree</a><br>
-//     A journalist, organizer and activist predicted streaming video and everyday invasion of privacy.
-//   </li>
-
-
-//   <li><b><a href="https://www.atariarchives.org/deli/soft.php" target="_top"><i
-//     className="fas fa-chevron-circle-right" style="font-size: 1.2rem; color: orange;"></i></a>&nbsp;<a
-//       href="https://www.atariarchives.org/deli/soft.php" target="_top">ON SOFTER SOFTWARE</b> by Bill
-//     Gates</a><br>
-//     Scroll down: Pre-Web, the Chairman of Microsoft, Inc. intuited cookies, tracking and AI aps.</li>
-
-
-//   <li><b><a href="https://www.atariarchives.org/deli/times_goes_computer.php" target="_top"><i
-//     className="fas fa-chevron-circle-right" style="font-size: 1.2rem; color: orange;"></i></a>&nbsp;<a
-//       href="https://www.atariarchives.org/deli/times_goes_computer.php" target="_top">THE TIMES GOES
-//       COMPUTER</b> by Carla Marie Rupp</a><br>
-//     A transition in NYC journalism, by a KU grad & sole inputter of every word in “Digital Deli”.</li>
-
-
-//   <li><b><a href="https://www.atariarchives.org/deli/40_year_old.php" target="_top"><i
-//     className="fas fa-chevron-circle-right" style="font-size: 1.2rem; color: orange;"></i></a>&nbsp;<a
-//       href="https://www.atariarchives.org/deli/40_year_old.php" target="_top">THE FORTY-YEAR-OLD
-//       HIPPIE BRINGS THE COMPUTER AGE HOME</b> by Ted Richards</a><br>
-//     Transitioning from the We Age to the dig-it-all Me Age, an Underground Comix icon matures.</li>
-
-//   <li><b><a href="https://www.atariarchives.org/deli/part2_forty.php" target="_top"><i
-//     className="fas fa-chevron-circle-right" style="font-size: 1.2rem; color: orange;"></i></a>&nbsp;<a
-//       href="https://www.atariarchives.org/deli/part2_forty.php" target="_top">THE FORTY-YEAR-OLD
-//       HIPPIE AND THE CRUNCHY COMPTER</b> by Ted Richards</a>
-//   Semi-autobiographical: Ted was marketing czar for Atari. Now the designer of this Web site!</li>
-
-// </ul>
-// )
-
-const Books_OLD = () => (
-  <section className="page-section portfolio" id="books" style={{ marginTop: "-3rem" }}>
-    <div className="container">
-      <Divider iconClass="fa fa-book" title="Books" />
-      <div className="container">
-        <table className="table">
-          <tbody>
-            <tr style={{ width: "80%" }}>
-
-              <td width="30%">
-                <Image
-                  src="/steve_digital_deli.png"
-                  className="img-fluid"
-                  alt="Book Icon"
-                  width={360}
-                  height={240}
-                />
-              </td>
-              <td width="70%">
-                <p className="article-text" style={{ fontWeight: 800 }}>
-                  <a
-                    className="article-text"
-                    style={{ fontWeight: 800 }}
-                    href="https://www.atariarchives.org/deli/"
-                    target="_blank"
-                  >
-                    The Story Behind the Digital Deli
-                  </a>
-                </p>
-                <p className="article-text" style={{ fontWeight: 400 }}>
-                  How did this now-classic collection of original works capturing the computer culture in its early days (1984) come about?
-                </p>
-                <p style={{ fontWeight: 200 }}></p>
-                <p className="article-text" style={{ fontWeight: 400 }}>The Introduction tells it all: just click here... </p>
-                <p
-                  className="text-sm-right"
-                  style={{ paddingTop: "1.5 rem", fontSize: "1.2 rem", fontStyle: "italic", color: "black" }}
-                >
-                  <a
-                    href="https://www.atariarchives.org/deli/introduction.php"
-                    target="_blank"
-                    className="text-sm-right"
-                    style={{ paddingTop: "1.5 rem", fontSize: "1.2 rem", fontStyle: "italic" }}
-                  >
-                    Digital Deli Introduction
-                  </a>
-                </p>
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
-
-    </div>
-
-  </section>
 );
 
 export default Books; 
