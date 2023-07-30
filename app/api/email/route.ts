@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.SMTP_USER,
+      user: process.env.SMTP_USER?.replaceAll('"', '').replaceAll("'", ''),
       pass: process.env.SMTP_PASSWORD
     }
   });
