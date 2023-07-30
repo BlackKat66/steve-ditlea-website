@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import Divider from "../components/divider";
 
 const Books = () => (
