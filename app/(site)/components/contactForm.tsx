@@ -19,10 +19,10 @@ const ContactForm = () => {
 		}))
 	};
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); 
 
-    console.log({ inputs }); 
+    await fetch("/api/email", { method: "POST", body: JSON.stringify(inputs) }); 
 
     setInputs({
       name: "",
