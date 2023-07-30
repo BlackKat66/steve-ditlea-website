@@ -22,7 +22,11 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); 
 
-    await fetch("/api/email", { method: "POST", body: JSON.stringify(inputs) }); 
+    try {
+      await fetch("/api/email", { method: "POST", body: JSON.stringify(inputs) }); 
+    } catch(err) {
+      console.error(err);
+    } 
 
     setInputs({
       name: "",
@@ -30,7 +34,7 @@ const ContactForm = () => {
       phone: "",
       message: ""
     }); 
-  }
+  }; 
 
   return (
       <section className="page-section" id="contact">
