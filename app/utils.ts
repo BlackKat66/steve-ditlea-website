@@ -28,13 +28,3 @@ export const getPhotos = async () => {
 
   return response.items;
 };
-
-// This doesn't seem to work with the current Next.js setup, likely because we're
-// loading the banner image for the header in the generic page layout component. 
-export const getHeaderContent = async () => {
-  const response = await contentfulClient.getEntries({
-    content_type: "headerContent",
-  });
-
-  return response.items;
-};
