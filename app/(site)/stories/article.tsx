@@ -31,7 +31,7 @@ const Article: FC<ArticleProps> = ({
         target="_blank"
       >
         {headline}
-        <p style={{ fontWeight: 200 }}>
+        <p style={{ fontWeight: 350 }}>
           {description}
         </p>
       </a>
