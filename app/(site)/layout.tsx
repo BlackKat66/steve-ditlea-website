@@ -24,8 +24,6 @@ export default async function RootLayout({
   // @ts-ignore
   const bannerImageUrl = bannerContent[0].fields.bannerImage.fields.file.url;
 
-  console.log({ bannerImageUrl });
-
   return (
     <html lang="en">
       <Head>
