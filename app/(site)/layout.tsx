@@ -24,7 +24,7 @@ export default async function RootLayout({
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
           type="text/css" />
-        <link href="css/stevestyles.css" rel="stylesheet" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <Script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" />
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
