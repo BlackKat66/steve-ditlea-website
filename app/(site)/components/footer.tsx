@@ -6,7 +6,7 @@ const Footer = () => (
     <div className="copyright py-4 text-center text-white">
     <div className="container text-medium">
         Copyright © 2023 Steve Ditlea <br />
-        <a href="http://tedrichards.net/" target="new">Web site design by Ted Richards</a>
+        <a className="text-white" href="http://tedrichards.net/" target="_blank">Web site design by Ted Richards</a>
     </div>
   </div>
   </>
