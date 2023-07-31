@@ -1,6 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Alert from 'react-bootstrap/Alert';
+
+const PRISTINE = "PRISTINE";
+const EDITING = "EDITING";
+const SENDING = "SENDING";
+const SUCCESS = "SUCCESS";
+const ERROR = "ERROR"; 
 
 const ContactForm = () => { 
   const [ inputs, setInputs ] = useState({
@@ -10,8 +17,12 @@ const ContactForm = () => {
     message: ""
   }); 
 
+  const [ formState, setFormState ] = useState(PRISTINE);
+
   const handleChange = (e: React.ChangeEvent) => {
     const target = e.target as HTMLInputElement;
+
+    setFormState(EDITING);
 
 		setInputs((prev) => ({
 			...prev,
@@ -21,13 +32,14 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); 
+    setFormState(SENDING);
 
     try {
       await fetch("/api/email", { method: "POST", body: JSON.stringify(inputs) }); 
+      setFormState(SUCCESS);
     } catch(err) {
-      console.error(err);
+      setFormState(ERROR);
     } 
-
     setInputs({
       name: "",
       email: "",
@@ -113,11 +125,22 @@ const ContactForm = () => {
                     className="btn btn-primary btn-xl" 
                     id="sendMessageButton"
                     type="submit"
+                    disabled={formState === SENDING}
                   >
                     Send
                   </button>
                 </div>
               </form>
+              { formState === SUCCESS && (
+                <Alert variant="success">
+                  Your email has been sent!
+                </Alert>
+              )}
+              { formState === ERROR && (
+                <Alert variant="danger">
+                  Message failed to send.
+                </Alert>
+              )}
             </div>
           </div>
         </div>
