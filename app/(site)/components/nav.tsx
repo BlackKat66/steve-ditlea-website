@@ -17,7 +17,7 @@ const Nav = () => (
         aria-label="Toggle navigation"
       >
         Menu
-        <i className="fas fa-bars"></i>
+        <i className="fas fa-bars" style={{marginLeft: "2px"}}></i>
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav ml-auto">
