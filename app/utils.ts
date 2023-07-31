@@ -28,3 +28,11 @@ export const getPhotos = async () => {
 
   return response.items;
 };
+
+export const getHeaderContent = async () => {
+  const response = await contentfulClient.getEntries({
+    content_type: "headerContent",
+  });
+
+  return response.items;
+};

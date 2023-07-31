@@ -5,6 +5,8 @@ import Nav from "./components/nav";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
+import { getHeaderContent } from "../utils";
+
 import "./globals.css";
 
 export const metadata = {
@@ -17,6 +19,13 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const bannerContent = await getHeaderContent();
+
+  // @ts-ignore
+  const bannerImageUrl = bannerContent[0].fields.bannerImage.fields.file.url;
+
+  console.log({ bannerImageUrl });
+
   return (
     <html lang="en">
       <Head>
@@ -33,7 +42,7 @@ export default async function RootLayout({
       <Script src="/scripts/theme.js" />
       <body>
         <Nav />
-        <Header bannerImageUrl="/top-banner2.png"/>
+        <Header bannerImageUrl={bannerImageUrl} />
         {children}
         <Footer />
       </body>
