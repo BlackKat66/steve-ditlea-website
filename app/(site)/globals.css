@@ -4471,6 +4471,12 @@ input[type=button].btn-block {
 .card-deck .card {
   margin-bottom: 1.5rem;
 }
+
+.article-list > li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
 @media (min-width: 576px) {
   .card-deck {
     display: flex;
