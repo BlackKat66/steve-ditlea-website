@@ -407,6 +407,7 @@ h6, .h6 {
 .lead {
   font-size: 1.25rem;
   font-weight: 350;
+  white-space: pre-wrap;
 }
 
 .display-1 {
