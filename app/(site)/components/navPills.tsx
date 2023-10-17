@@ -16,7 +16,7 @@ const NavPills = () => {
                 className={`nav-link ${pathname === "/stories" ? "active" : ""}`}
                 href="/stories"
               >
-                Stories
+                STORIES
               </Link>
             </li>
             <li className="nav-item" style={{ marginLeft: "4rem" }}>
@@ -24,7 +24,7 @@ const NavPills = () => {
                 className={`nav-link ${pathname === "/books" ? "active" : ""}`}
                 href="/books"
               >
-                Books
+                BOOKS
               </Link>
             </li>
             <li className="nav-item" style={{ marginLeft: "4rem" }}>
@@ -32,7 +32,7 @@ const NavPills = () => {
                 className={`nav-link ${pathname === "/photos" ? "active" : ""}`}
                 href="/photos"
               >
-                Photos
+                PHOTOS
               </Link>
             </li>
           </ul>
